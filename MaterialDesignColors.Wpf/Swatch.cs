@@ -11,6 +11,7 @@ namespace MaterialDesignColors
     {
         public Swatch(string name, IEnumerable<Hue> primaryHues, IEnumerable<Hue> accentHues)
         {
+            
             if (name == null) throw new ArgumentNullException(nameof(name));
             if (primaryHues == null) throw new ArgumentNullException(nameof(primaryHues));
             if (accentHues == null) throw new ArgumentNullException(nameof(accentHues));

@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MahMaterialDragablzMashUp
+namespace MahAppsDragablzDemo
 {
     /// <summary>
     /// No WPF project is complete without it's own version of this.

@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MaterialDesignColors.WpfExample.Domain
+namespace MaterialDesignDemo.Domain
 {
     /// <summary>
     /// No WPF project is complete without it's own version of this.
@@ -21,7 +17,7 @@ namespace MaterialDesignColors.WpfExample.Domain
 
         public AnotherCommandImplementation(Action<object> execute, Func<object, bool> canExecute)
         {
-            if (execute == null) throw new ArgumentNullException(nameof(execute));
+            if (execute == null) throw new ArgumentNullException(execute.Target.ToString());
 
             _execute = execute;
             _canExecute = canExecute ?? (x => true);

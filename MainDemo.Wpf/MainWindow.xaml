@@ -1,10 +1,10 @@
-﻿<Window x:Class="MaterialDesignColors.WpfExample.MainWindow"
+﻿<Window x:Class="MaterialDesignDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
-        xmlns:wpfExample="clr-namespace:MaterialDesignColors.WpfExample"
-        xmlns:domain="clr-namespace:MaterialDesignColors.WpfExample.Domain"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:domain="clr-namespace:MaterialDesignDemo.Domain"
+        xmlns:materialDesignDemo="clr-namespace:MaterialDesignDemo"
         Title="Material Design in XAML" Height="800" Width="1100"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -49,111 +49,111 @@
                         </ListBox.ItemTemplate>
                         <domain:DemoItem Name="Home">
                             <domain:DemoItem.Content>
-                                <wpfExample:Home />
+                                <materialDesignDemo:Home />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Palette">
                             <domain:DemoItem.Content>
-                                <wpfExample:PaletteSelector>
-                                    <wpfExample:PaletteSelector.DataContext>
-                                        <wpfExample:PaletteSelectorViewModel />
-                                    </wpfExample:PaletteSelector.DataContext>
-                                </wpfExample:PaletteSelector>
+                                <materialDesignDemo:PaletteSelector>
+                                    <materialDesignDemo:PaletteSelector.DataContext>
+                                        <materialDesignDemo:PaletteSelectorViewModel />
+                                    </materialDesignDemo:PaletteSelector.DataContext>
+                                </materialDesignDemo:PaletteSelector>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Buttons &amp; Toggles">
                             <domain:DemoItem.Content>
-                                <wpfExample:Buttons />
+                                <materialDesignDemo:Buttons />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Fields">
                             <domain:DemoItem.Content>
-                                <wpfExample:TextFields />
+                                <materialDesignDemo:TextFields />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Pickers">
                             <domain:DemoItem.Content>
-                                <wpfExample:Pickers>
-                                    <wpfExample:Pickers.DataContext>
-                                        <wpfExample:PickersViewModel />
-                                    </wpfExample:Pickers.DataContext>
-                                </wpfExample:Pickers>
+                                <materialDesignDemo:Pickers>
+                                    <materialDesignDemo:Pickers.DataContext>
+                                        <materialDesignDemo:PickersViewModel />
+                                    </materialDesignDemo:Pickers.DataContext>
+                                </materialDesignDemo:Pickers>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Sliders">
                             <domain:DemoItem.Content>
-                                <wpfExample:Sliders />
+                                <materialDesignDemo:Sliders />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Typography">
                             <domain:DemoItem.Content>
-                                <wpfExample:Typography />
+                                <materialDesignDemo:Typography />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Cards">
                             <domain:DemoItem.Content>
-                                <wpfExample:Cards />
+                                <materialDesignDemo:Cards />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Colour Zones">
                             <domain:DemoItem.Content>
-                                <wpfExample:ColorZones />
+                                <materialDesignDemo:ColorZones />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Lists">
                             <domain:DemoItem.Content>
-                                <wpfExample:Lists>
-                                    <wpfExample:Lists.DataContext>
+                                <materialDesignDemo:Lists>
+                                    <materialDesignDemo:Lists.DataContext>
                                         <domain:ListsAndGridsViewModel />
-                                    </wpfExample:Lists.DataContext>
-                                </wpfExample:Lists>
+                                    </materialDesignDemo:Lists.DataContext>
+                                </materialDesignDemo:Lists>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Trees">
                             <domain:DemoItem.Content>
-                                <wpfExample:Trees>
-                                    <wpfExample:Trees.DataContext>
+                                <materialDesignDemo:Trees>
+                                    <materialDesignDemo:Trees.DataContext>
                                         <domain:TreesViewModel/>
-                                    </wpfExample:Trees.DataContext>
-                                </wpfExample:Trees>
+                                    </materialDesignDemo:Trees.DataContext>
+                                </materialDesignDemo:Trees>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Grids">
                             <domain:DemoItem.Content>
-                                <wpfExample:Grids>
-                                    <wpfExample:Grids.DataContext>
+                                <materialDesignDemo:Grids>
+                                    <materialDesignDemo:Grids.DataContext>
                                         <domain:ListsAndGridsViewModel />
-                                    </wpfExample:Grids.DataContext>
-                                </wpfExample:Grids>
+                                    </materialDesignDemo:Grids.DataContext>
+                                </materialDesignDemo:Grids>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Expander">
                             <domain:DemoItem.Content>
-                                <wpfExample:Expander />
+                                <materialDesignDemo:Expander />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Menus &amp; Tool Bars">
                             <domain:DemoItem.Content>
-                                <wpfExample:MenusAndToolBars />
+                                <materialDesignDemo:MenusAndToolBars />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Progress Indicators">
                             <domain:DemoItem.Content>
-                                <wpfExample:Progress />
+                                <materialDesignDemo:Progress />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Dialogs">
                             <domain:DemoItem.Content>
-                                <wpfExample:Dialogs>
-                                    <wpfExample:Dialogs.DataContext>
+                                <materialDesignDemo:Dialogs>
+                                    <materialDesignDemo:Dialogs.DataContext>
                                         <domain:DialogsViewModel />
-                                    </wpfExample:Dialogs.DataContext>
-                                </wpfExample:Dialogs>
+                                    </materialDesignDemo:Dialogs.DataContext>
+                                </materialDesignDemo:Dialogs>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Shadows">
                             <domain:DemoItem.Content>
-                                <wpfExample:Shadows />
+                                <materialDesignDemo:Shadows />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                     </ListBox>

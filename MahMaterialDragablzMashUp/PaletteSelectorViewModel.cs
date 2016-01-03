@@ -1,9 +1,9 @@
-﻿using MaterialDesignColors;
-using MaterialDesignThemes.Wpf;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Input;
+using MaterialDesignColors;
+using MaterialDesignThemes.Wpf;
 
-namespace MahMaterialDragablzMashUp
+namespace MahAppsDragablzDemo
 {
     public class PaletteSelectorViewModel
     {

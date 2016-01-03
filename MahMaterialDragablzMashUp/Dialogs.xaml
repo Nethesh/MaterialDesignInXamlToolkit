@@ -1,14 +1,14 @@
-﻿<UserControl x:Class="MahMaterialDragablzMashUp.Dialogs"
+﻿<UserControl x:Class="MahAppsDragablzDemo.Dialogs"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:MahMaterialDragablzMashUp"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:dialogs="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+             xmlns:mahAppsDragablzDemo="clr-namespace:MahAppsDragablzDemo"
              mc:Ignorable="d"     
              dialogs:DialogParticipation.Register="{Binding}"
              d:DesignHeight="300" d:DesignWidth="300"
-             d:DataContext="{d:DesignInstance local:DialogsViewModel}">
+             d:DataContext="{d:DesignInstance mahAppsDragablzDemo:DialogsViewModel}">
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
         <Button Command="{Binding ShowInputDialogCommand}">INPUT DIALOG</Button>
         <Button Command="{Binding ShowProgressDialogCommand}" Margin="0 48 0 0">PROGRESS DIALOG</Button>

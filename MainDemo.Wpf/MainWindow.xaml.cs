@@ -1,11 +1,10 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
-using MaterialDesignColors.WpfExample.Domain;
+using MaterialDesignDemo.Domain;
 using MaterialDesignThemes.Wpf;
 
-namespace MaterialDesignColors.WpfExample
+namespace MaterialDesignDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

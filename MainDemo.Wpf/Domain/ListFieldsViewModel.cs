@@ -2,9 +2,8 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows.Controls;
 
-namespace MaterialDesignColors.WpfExample.Domain
+namespace MaterialDesignDemo.Domain
 {
     public class ListsAndGridsViewModel : INotifyPropertyChanged
     {
@@ -66,6 +65,14 @@ namespace MaterialDesignColors.WpfExample.Domain
                     Code = 'P',
                     Name = "Predator",
                     Description = "If it bleeds, we can kill it"
+                },
+                new SelectableViewModel
+                {
+                    Code = 'B',
+                    Name = "Mbithy Mbithy",
+                    Description = "If he is a coder, he is awesome",
+                    Numeric = 125,
+                    Food = "Rice By Dice"
                 }
             };
         }

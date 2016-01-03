@@ -7,7 +7,7 @@ namespace MaterialDesignColors
     {
         public Hue(string name, Color color, Color foreground)
         {
-            if (name == null) throw new ArgumentNullException(nameof(name));
+            if (name == null) throw new ArgumentNullException(name);
 
             Name = name;
             Color = color;

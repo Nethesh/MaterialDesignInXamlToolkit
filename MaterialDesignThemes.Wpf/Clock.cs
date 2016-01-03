@@ -366,10 +366,15 @@ namespace MaterialDesignThemes.Wpf
 		            var localIsPostMerdiem = sqrt > outerBoundary;
 
 		            var hour = (int) Math.Round(6*angle/Math.PI, MidpointRounding.AwayFromZero)%12 + (localIsPostMerdiem ? 12 : 0);
-		            if (hour == 12)
-		                hour = 0;
-                    else if (hour == 0)
-                        hour = 12;
+		            switch (hour)
+		            {
+		                case 12:
+		                    hour = 0;
+		                    break;
+		                case 0:
+		                    hour = 12;
+		                    break;
+		            }
 		            time = new DateTime(Time.Year, Time.Month, Time.Day, hour, Time.Minute, Time.Second);
                 }
 		        else
